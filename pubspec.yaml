@@ -1,0 +1,41 @@
+name: flutter_cake_shop_project
+description: "แอปแนะนำร้านเค้ก ตามแนวทาง Flutter ในชั้นเรียน"
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.13.0
+
+dependencies:
+  flutter:
+    sdk: flutter
+  carousel_slider: ^5.1.2
+  cupertino_icons: ^1.0.9
+  font_awesome_flutter: ^11.0.0
+  flutter_map: ^8.3.2
+  google_fonts: ^9.0.0
+  latlong2: ^0.10.1
+  url_launcher: ^6.3.3
+
+dev_dependencies:
+  flutter_lints: ^6.0.0
+  flutter_launcher_icons: ^0.14.4
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/images/
+
+flutter_launcher_icons:
+  android: true
+  ios: true
+  image_path: assets/images/icon.png
+  adaptive_icon_background: '#FFF7F8'
+  adaptive_icon_foreground: assets/images/icon.png
+  remove_alpha_ios: true
+  background_color_ios: '#FFF7F8'
+  web:
+    generate: true
+    image_path: assets/images/icon.png
+    background_color: '#FFF7F8'
+    theme_color: '#E53935'
